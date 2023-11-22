@@ -7,7 +7,7 @@ const serviceData = [
   },
   {
     icon: "ri-refresh-line",
-    title: "Easy Returns",
+    title: "Best Service",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#ceebe9",
   },

@@ -23,11 +23,11 @@ const Home = () => {
   const year = new Date().getFullYear()
 
 useEffect(() => {
-  const filteredtrendingProducts = products.filter((item)=> item.category==="chair");
-  const filteredbestSelesProducts = products.filter((item)=> item.category==="sofa");
-  const filteredmobileProducts = products.filter((item)=> item.category==="mobile");
-  const filteredwirelessProducts = products.filter((item)=> item.category==="wireless");
-  const filteredwatchProducts = products.filter((item)=> item.category==="watch");
+  const filteredtrendingProducts = products.filter((item)=> item.category==="bargar");
+  const filteredbestSelesProducts = products.filter((item)=> item.category==="pizza");
+  const filteredmobileProducts = products.filter((item)=> item.category==="food");
+  const filteredwirelessProducts = products.filter((item)=> item.category==="crem");
+  const filteredwatchProducts = products.filter((item)=> item.category==="Crema");
 
   setTrendingproduct(filteredtrendingProducts);
   setBestseles(filteredbestSelesProducts);
@@ -68,7 +68,7 @@ useEffect(() => {
     <section className="trending__products">
       <Container>
         <Row>
-          <Col lg='12' className='text-center'>
+          <Col lg='12' className='text-center mb-4'>
           <h2 className='section__title'>Trending Product</h2>
           </Col>
           <ProductList data={trendingproduct}/> 
@@ -78,7 +78,7 @@ useEffect(() => {
     <section className="best__sales">
       <Container>
       <Row>
-          <Col lg='12' className='text-center'>
+          <Col lg='12' className='text-center mb-4'>
           <h2 className='section__title'>Best Seles</h2>
           </Col>
          <ProductList data={bestSeles}/>
@@ -108,7 +108,7 @@ useEffect(() => {
     <section className="best__sales">
       <Container>
       <Row>
-          <Col lg='12' className='text-center mb-3'>
+          <Col lg='12' className='text-center mb-4'>
           <h2 className='section__title'>New Arrivals</h2>
           </Col>
          <ProductList data={mobile}/>

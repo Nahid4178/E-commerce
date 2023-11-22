@@ -23,7 +23,16 @@ const nav__links=[
   {
     path : '/cart',
     display:'Cart'
+  },
+  {
+    path : '/login',
+    display:'Login'
+  },
+  {
+    path : '/signup',
+    display:'SignUp'
   }
+  
 ]
 
 const Header = () => {
@@ -58,8 +67,7 @@ const menuToggle=() => menuRef.current.classList.toggle('active__menu')
                 <div className="logo">
                   <img src={logo} alt="" />
                   <div>
-                    <h1>Busimart</h1>
-                   
+                    <h1>Food Product</h1>                  
                   </div>
                 </div>
                 <div className="navigation" ref={menuRef} onClick={menuToggle}>
@@ -84,7 +92,7 @@ const menuToggle=() => menuRef.current.classList.toggle('active__menu')
                     <span className="badge">{totalQuantity}</span>
                   </span>
                   <span>
-                    <motion.img whileTap={{scale:1.2}} src={userIcon} alt="" />
+                    {/* <motion.img whileTap={{scale:1.2}} src={userIcon} alt="" /> */}
                     </span>
                     <div className="mobile__menu" >
                   <span onClick={menuToggle}><i class='ri-menu-line'></i></span>

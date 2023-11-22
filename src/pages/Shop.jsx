@@ -18,24 +18,24 @@ const [productsData, setProductsData] = useState(products)
 const handleFilter = (e) =>{
   const filterValue = e.target.value
 
-  if(filterValue === "sofa"){
-    const filteredProducts = products.filter((item)=> item.category==="sofa");
+  if(filterValue === "pizza"){
+    const filteredProducts = products.filter((item)=> item.category==="pizza");
     setProductsData(filteredProducts)
   }
-  if(filterValue === "mobile"){
-    const filteredProducts = products.filter((item)=> item.category==="mobile");
+  if(filterValue === "bargar"){
+    const filteredProducts = products.filter((item)=> item.category==="bargar");
     setProductsData(filteredProducts)
   }
-  if(filterValue === "chair"){
-    const filteredProducts = products.filter((item)=> item.category==="chair");
+  if(filterValue === "food"){
+    const filteredProducts = products.filter((item)=> item.category==="food");
     setProductsData(filteredProducts)
   }
-  if(filterValue === "watch"){
-    const filteredProducts = products.filter((item)=> item.category==="watch");
+  if(filterValue === "crem"){
+    const filteredProducts = products.filter((item)=> item.category==="crem");
     setProductsData(filteredProducts)
   }
-  if(filterValue === "wireless"){
-    const filteredProducts = products.filter((item)=> item.category==="wireless");
+  if(filterValue === "Crema"){
+    const filteredProducts = products.filter((item)=> item.category==="Crema");
     setProductsData(filteredProducts)
   }
 }
@@ -58,11 +58,11 @@ const handleSearch = e =>{
               <div className="filter__widget">
                 <select onChange={handleFilter} >
                 <option>Filter By Category</option>
-                  <option value="sofa">Sofa</option>
-                  <option value="mobile">Mobile</option>
-                  <option value="chair">Chair</option>
-                  <option value="watch">Watch</option>
-                  <option value="wireless">Wireless</option>
+                  <option value="pizza">Pizza</option>
+                  <option value="bargar">Bargar</option>
+                  <option value="crem">Crem</option>
+                  <option value="Crema">Crema</option>
+                  <option value="food">Food</option>
                 </select>
               </div>
             </Col>
@@ -70,8 +70,8 @@ const handleSearch = e =>{
             <div className="filter__widget">
                 <select >
                 <option>Sort By</option>
-                  <option value="ascending">Ascending</option>
-                  <option value="descending">Descending</option>
+                  <option value="ascending">lunce</option>
+                  <option value="descending">Dinner</option>
                 </select>
               </div>
             </Col>

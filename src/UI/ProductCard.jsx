@@ -35,7 +35,7 @@ const ProductCard = ({item}) => {
   return (
     <Col md='4' lg='3' className='mb-3'>
     <div className='product__item'>
-        <div className="product__img">
+        <div className="product__img" style={{height:"300px", objectFit:"fill"}}>
             <Link to={`/shop/${item.id}`}>
             <motion.img whileHover={{scale:0.9}} src={item.imgUrl} alt="" /></Link>
         </div>
